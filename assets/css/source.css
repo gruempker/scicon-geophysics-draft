@@ -72,7 +72,7 @@
   .instrument-footer { position: relative; z-index: 1; display: flex; align-items: center; gap: 0.55rem; color: #94a3b8; font-size: 0.59rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
   .instrument-line { height: 1px; flex: 1; background: rgb(148 163 184 / 0.35); }
   .instrument-caption { position: relative; z-index: 1; max-width: 24rem; margin-top: 1.1rem; color: #94a3b8; font-size: 0.74rem; line-height: 1.55; }
-  .wavefronts { position: absolute; z-index: 0; pointer-events: none; background: repeating-radial-gradient(ellipse at center, transparent 0 29px, rgb(94 234 212 / 0.7) 30px 31px, transparent 32px 57px); mask-image: radial-gradient(ellipse at center, black 0 46%, transparent 76%); }
+  .wavefronts { position: absolute; z-index: 0; pointer-events: none; background: repeating-radial-gradient(ellipse at center, transparent 0 29px, rgb(94 234 212 / 0.7) 30px 32px, transparent 33px 57px); mask-image: radial-gradient(ellipse at center, black 0 46%, transparent 76%); }
   .wavefronts-hero { top: -14rem; right: -16rem; height: 46rem; width: 52rem; opacity: 0.12; transform: rotate(-9deg); }
   .wavefronts-questions { top: -10rem; right: -16rem; height: 42rem; width: 48rem; opacity: 0.1; transform: rotate(8deg); }
   .wavefronts-contact { right: -18rem; bottom: -17rem; height: 48rem; width: 54rem; opacity: 0.16; transform: rotate(-6deg); }
