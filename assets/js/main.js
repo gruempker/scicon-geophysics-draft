@@ -44,4 +44,11 @@
   document.querySelectorAll('[data-year]').forEach((element) => {
     element.textContent = String(new Date().getFullYear());
   });
+
+  const sourceTrace = document.querySelector('.trace-field');
+  if (sourceTrace) {
+    document.querySelectorAll('[data-section-trace]').forEach((trace) => {
+      trace.innerHTML = sourceTrace.innerHTML;
+    });
+  }
 })();

@@ -72,6 +72,12 @@
   .instrument-footer { position: relative; z-index: 1; display: flex; align-items: center; gap: 0.55rem; color: #94a3b8; font-size: 0.59rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
   .instrument-line { height: 1px; flex: 1; background: rgb(148 163 184 / 0.35); }
   .instrument-caption { position: relative; z-index: 1; max-width: 24rem; margin-top: 1.1rem; color: #94a3b8; font-size: 0.74rem; line-height: 1.55; }
+  .section-trace { position: absolute; z-index: 0; display: grid; height: 13rem; width: min(52rem, 68vw); grid-template-columns: repeat(40, minmax(0, 1fr)); align-items: center; pointer-events: none; opacity: 0.1; mask-image: linear-gradient(90deg, transparent, black 18%, black 82%, transparent); }
+  .section-trace::after { position: absolute; inset: 50% 0 auto; height: 1px; background: #5eead4; content: ""; }
+  .section-trace span { width: 1px; height: var(--h); min-height: 0.35rem; justify-self: center; background: #5eead4; }
+  .section-trace span:nth-child(5n) { width: 1.5px; }
+  .section-trace-questions { top: 2.5rem; right: -8rem; }
+  .section-trace-contact { right: -7rem; bottom: -1rem; height: 16rem; opacity: 0.11; }
 
   .experience-note { display: grid; grid-template-columns: auto 1fr; gap: 1.25rem; border-left: 3px solid #0f766e; background: #f0fdfa; padding: 1.5rem; }
   .experience-index { display: grid; height: 2.1rem; width: 2.1rem; place-items: center; border-radius: 999px; background: #ccfbf1; color: #115e59; font-size: 0.67rem; font-weight: 800; }
@@ -115,7 +121,6 @@
   .principle p { margin-top: 0.55rem; color: #64748b; font-size: 0.91rem; line-height: 1.65; }
 
   .contact-section { position: relative; overflow: hidden; background: #0b2429; }
-  .contact-contours { position: absolute; inset: 0 0 0 52%; opacity: 0.22; background: repeating-radial-gradient(ellipse at 110% 45%, transparent 0 28px, #5eead4 29px 30px, transparent 31px 54px); mask-image: linear-gradient(to left, black, transparent); }
   .footer-link, .legal-footer a { color: #cbd5e1; text-underline-offset: 0.3em; }
   .footer-link:hover, .legal-footer a:hover { color: white; }
 
@@ -133,6 +138,12 @@
 @media (min-width: 640px) {
   .page-shell { width: min(100% - 3rem, 78rem); }
   .service-featured { margin-inline: -1.5rem; padding-inline: 1.5rem; }
+}
+
+@media (max-width: 639px) {
+  .section-trace { width: 120vw; opacity: 0.065; }
+  .section-trace-questions { top: 4rem; right: -55vw; }
+  .section-trace-contact { right: -55vw; bottom: 1rem; }
 }
 
 @media (min-width: 768px) {
