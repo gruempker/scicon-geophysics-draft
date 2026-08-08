@@ -65,9 +65,10 @@
   .hero-instrument { position: relative; width: min(100%, 23rem); min-height: 17rem; justify-self: center; overflow: hidden; border: 1px solid rgb(94 234 212 / 0.22); background: linear-gradient(145deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.01)); padding: 1.15rem; box-shadow: 0 24px 60px rgb(0 0 0 / 0.16); }
   .hero-instrument::before { position: absolute; inset: 3.3rem 0 5.7rem; background-image: linear-gradient(rgb(255 255 255 / 0.04) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 0.04) 1px, transparent 1px); background-size: 28px 28px; content: ""; }
   .instrument-meta { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 1rem; color: #94a3b8; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.14em; }
-  .trace-field { position: relative; z-index: 1; display: grid; height: 8.5rem; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: center; gap: clamp(4px, 0.7vw, 8px); margin-top: 1.35rem; }
+  .trace-field { position: relative; z-index: 1; display: grid; height: 8.5rem; grid-template-columns: repeat(40, minmax(0, 1fr)); align-items: center; margin-top: 1.35rem; }
   .trace-field::after { position: absolute; inset: 50% 0 auto; height: 1px; background: rgb(94 234 212 / 0.5); content: ""; }
-  .trace-field span { height: var(--h); min-height: 0.35rem; border-radius: 999px; background: linear-gradient(to bottom, #5eead4, #0f766e); box-shadow: 0 0 14px rgb(45 212 191 / 0.25); }
+  .trace-field span { width: 1px; height: var(--h); min-height: 0.35rem; justify-self: center; background: #5eead4; opacity: 0.58; }
+  .trace-field span:nth-child(5n) { width: 1.5px; opacity: 0.88; }
   .instrument-footer { position: relative; z-index: 1; display: flex; align-items: center; gap: 0.55rem; color: #94a3b8; font-size: 0.59rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
   .instrument-line { height: 1px; flex: 1; background: rgb(148 163 184 / 0.35); }
   .instrument-caption { position: relative; z-index: 1; max-width: 24rem; margin-top: 1.1rem; color: #94a3b8; font-size: 0.74rem; line-height: 1.55; }
