@@ -2,7 +2,9 @@
 
 This folder contains a self-contained static website prototype.
 
-Public draft preview: https://gruempker.github.io/scicon-geophysics-draft/
+Custom domain: https://scicongeophysics.com/
+
+GitHub Pages fallback: https://gruempker.github.io/scicon-geophysics-draft/
 
 ## Review locally
 
@@ -11,7 +13,7 @@ Open `index.html` in a modern browser. The main page and both legal pages work w
 ## Before publication
 
 - Complete and legally review all marked fields in `imprint.html` and `privacy.html`.
-- Confirm the production domain used in canonical metadata, `robots.txt`, and `sitemap.xml`.
+- Remove the temporary `noindex` directive from the HTML and update `robots.txt` when the site is approved for search indexing.
 - Confirm the final hosting provider and its privacy implications.
 - Review all service wording and team details.
 - Recompile `assets/css/styles.css` after changing Tailwind classes or `assets/css/source.css`.
